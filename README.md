@@ -20,7 +20,7 @@ and monitoring into live operation — and through attribution and retirement wh
 - **Portfolio and risk ownership.** Capital allocation, correlated exposure, regime dependence,
   portfolio heat, leverage, drawdown control, capacity, strategy overlap.
 
-Scope of the independent track: managed systematic trading capital across proprietary/owned funds and
+Scope of the independent track: managed systematic trading capital across proprietary/owned capital and
 external/prop trading allocations, with peak capital under management up to $25M; 10+ live strategies
 at peak across BTC, ETH and liquid altcoin perpetuals; 50+ documented strategy lines researched,
 validated, deployed, parked or rejected.
