@@ -16,7 +16,8 @@ and monitoring into live operation — and through attribution and retirement wh
 - **Quant research.** Preregistration, matched-null controls, placebo tests, walk-forward validation,
   era splits, block bootstrap, sample gates, explicit PASS / WATCH / KILL decisions.
 - **Systematic trading development.** Python research-to-production stack — exchange APIs, order
-  lifecycle, partial fills, cross-venue reconciliation, deterministic replay, event stores, monitoring.
+  lifecycle, partial fills, reconciliation against venue truth, deterministic replay, event stores,
+  monitoring.
 - **Portfolio and risk ownership.** Capital allocation, correlated exposure, regime dependence,
   portfolio heat, leverage, drawdown control, capacity, strategy overlap.
 
