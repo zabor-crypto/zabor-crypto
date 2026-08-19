@@ -1,54 +1,70 @@
 # Boris Zabavnikov
 
-Software & research engineer building reliable AI, data and risk-control systems.
-Python · reproducible evaluation · event-driven architectures.
+**Systematic trading professional combining quantitative research, production trading engineering,
+and portfolio/risk ownership — from hypothesis to live capital.**
+
+Digital-asset markets since 2013. Independent systematic trading and quant research: I take a
+strategy from hypothesis and data through validation, simulation, portfolio construction, execution
+and monitoring into live operation — and through attribution and retirement when it stops working.
+
+`Research rigor · Production realism · Portfolio ownership`
 
 ---
 
-### Selected projects
+### What I do
 
-**[Research Intelligence Platform](https://github.com/zabor-crypto/research-intelligence-platform)**
-A local-first pipeline that turns papers, repositories and notes into ranked, testable research
-hypotheses. Eligibility rules are deterministic code kept *outside* the LLM prompt, so a rejection is
-reproducible and auditable whether or not a model is in the loop. Runs fully offline with a mock
-provider; the test suite needs no network and no API key.
+- **Quant research.** Preregistration, matched-null controls, placebo tests, walk-forward validation,
+  era splits, block bootstrap, sample gates, explicit PASS / WATCH / KILL decisions.
+- **Systematic trading development.** Python research-to-production stack — exchange APIs, order
+  lifecycle, partial fills, cross-venue reconciliation, deterministic replay, event stores, monitoring.
+- **Portfolio and risk ownership.** Capital allocation, correlated exposure, regime dependence,
+  portfolio heat, leverage, drawdown control, capacity, strategy overlap.
 
-**[zaBor](https://github.com/zabor-crypto/zaBor)**
-Toolkit for market-data research, operational risk controls and reproducible analysis. Includes an
-emergency risk-control engine with a fail-closed default, a wallet-tagged microstructure recorder, and
-multi-venue research infrastructure that reports negative results as results.
-
----
-
-### Engineering interests
-
-- Reliable AI systems — deterministic guarantees around non-deterministic components
-- Reproducible evaluation — offline test suites, pinned inputs, method published alongside findings
-- Data pipelines — ingestion, normalization and storage that survive partial failure
-- Event-driven architectures — append-only capture, replay, reconciliation
-- Operational risk controls — fail-closed defaults, staged escalation, observable rollout
+Scope of the independent track: managed systematic trading capital across proprietary/owned funds and
+external/prop trading allocations, with peak capital under management up to $25M; 10+ live strategies
+at peak across BTC, ETH and liquid altcoin perpetuals; 50+ documented strategy lines researched,
+validated, deployed, parked or rejected.
 
 ---
 
-### Selected public activity
+### Public code
 
-- Deterministic, code-enforced eligibility gating with machine-readable rejection reasons, wrapped in
-  an offline-reproducible test suite.
-- An emergency risk-control engine covering three exchanges, with staged closure and a portfolio-level
-  guard for slow drawdowns that threshold-based logic does not detect.
-- A microstructure recorder for venue data that publishes counterparty addresses, plus a
-  standard-library toolkit that measures adverse selection per counterparty rather than assuming it.
-- A multi-venue funding-arbitrage study concluding *no edge at current fee levels*, published together
-  with the verdict tables and the engine that produced them.
+**[zaBor](https://github.com/zabor-crypto/zaBor)** — trading engineering toolkit.
+An emergency risk-control engine with account-level drawdown protection: PnL attribution decides
+*which side* caused a loss, positions are ranked and closed surgically, and a portfolio-level Regime
+Guard covers the slow bleed that no threshold on a 15-minute window ever catches. Fail-closed by
+design — 153 offline tests, no credentials needed to run any of it. Alongside it: a wallet-tagged
+Hyperliquid microstructure recorder that turns adverse selection from an assumption into a
+per-counterparty measurement, and a multi-venue funding-carry research stack.
+
+**[Research Intelligence Platform](https://github.com/zabor-crypto/research-intelligence-platform)** —
+research-to-hypothesis pipeline.
+Turns papers, repositories and notes into ranked, backtest-ready strategy hypotheses. The eligibility
+rules are deterministic code kept *outside* the model prompt, so a rejection is reproducible and
+auditable whether or not an LLM is in the loop. 324 tests, fully offline, no API key required.
+
+Both install and run from a clean clone with no exchange account and no keys.
 
 ---
 
-### Technologies
+### Technical focus
 
-`Python` · `pytest` · `SQLite` · `asyncio` · `httpx` · `pandas` / `numpy` · `GitHub Actions` ·
-`WebSocket / REST integrations` · `Pine Script`
+Python · pandas / NumPy / SciPy · pytest · asyncio · SQLite and event stores · Parquet / DuckDB ·
+exchange REST and WebSocket integrations · deterministic replay and backtest parity · Linux, systemd,
+multi-VPS operation
 
 ---
 
-*Published repositories are sanitized: no private research corpus, no proprietary parameters,
-no live configuration or account data.*
+### Public / private boundary
+
+The public repositories are the engineering and methodology layer, published deliberately. Live
+strategy logic and parameters, private research corpora, account data, positions and trading records
+are not published, and results that depend on private datasets are labelled as such rather than
+presented as reproducible.
+
+Where a figure here comes from a reconstruction or a shadow test rather than realised live trading,
+it says so.
+
+---
+
+[LinkedIn](https://www.linkedin.com/in/boris-zabavnikov)
