@@ -20,6 +20,8 @@ and monitoring into live operation — and through attribution and retirement wh
   monitoring.
 - **Portfolio and risk ownership.** Capital allocation, correlated exposure, regime dependence,
   portfolio heat, leverage, drawdown control, capacity, strategy overlap.
+- **AI workflow engineering.** Model-assisted research with deterministic eligibility checks,
+  replaceable providers, offline evaluation and human decisions at research handoffs.
 
 Scope of the independent track: managed systematic trading capital across proprietary/owned capital and
 external/prop trading allocations, with peak capital under management up to $25M; 10+ live strategies
@@ -45,6 +47,18 @@ rules are deterministic code kept *outside* the model prompt, so a rejection is 
 auditable whether or not an LLM is in the loop. 324 tests, fully offline, no API key required.
 
 Both install and run from a clean clone with no exchange account and no keys.
+
+---
+
+### Applied AI and technical coordination
+
+The Research Intelligence Platform also provides a concrete applied-AI engineering example:
+external material becomes structured hypotheses, model outputs pass through code-enforced rules,
+and an offline provider makes the workflow reproducible without a model API.
+
+This is the basis for my adjacent interest in applied AI engineering, research automation and
+hands-on technical coordination. The public code demonstrates implementation and evaluation;
+leadership scope is discussed through specific project examples.
 
 ---
 
