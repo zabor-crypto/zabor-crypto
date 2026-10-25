@@ -1,85 +1,46 @@
 # Boris Zabavnikov
 
-**Systematic trading professional combining quantitative research, production trading engineering,
-and portfolio/risk ownership — from hypothesis to live capital.**
+**Quantitative research and engineering · Applied ML · Execution and portfolio risk**
 
-Digital-asset markets since 2013. Independent systematic trading and quant research: I take a
-strategy from hypothesis and data through validation, simulation, portfolio construction, execution
-and monitoring into live operation — and through attribution and retirement when it stops working.
+I build Python systems that carry research from a falsifiable hypothesis through validation,
+execution modelling and portfolio decisions. My digital-asset market experience dates to 2013.
 
-`Research rigor · Production realism · Portfolio ownership`
+I am interested in three directions equally: **Quant / ML / AI Research**, **Execution Engineering**
+and **Systematic Portfolio Management**.
 
----
+## Selected engineering work
 
-### What I do
+| Project | What it demonstrates | Start here |
+|---|---|---|
+| [Research Intelligence Platform](https://github.com/zabor-crypto/research-intelligence-platform) | Research triage, structured hypotheses and deterministic eligibility checks around replaceable LLM providers | [Offline quickstart](https://github.com/zabor-crypto/research-intelligence-platform#quickstart-fully-offline-mock-llm) |
+| [AIQE](https://github.com/zabor-crypto/aiqe) | Bounded changes and evidence-backed completion for AI-assisted engineering, built quant-first | [Lookahead demo](https://github.com/zabor-crypto/aiqe/tree/main/examples/lookahead-demo) |
+| [zaBor](https://github.com/zabor-crypto/zaBor) | Market-data capture, operational risk controls, microstructure tooling and reproducible research | [Toolkit overview](https://github.com/zabor-crypto/zaBor#three-flagship-components) |
+| [SMLT research code](https://github.com/zabor-crypto/smlt-pif-research-code) | An academic portfolio-research prototype, with explicit data and reproduction limits | [Source and scope](https://github.com/zabor-crypto/smlt-pif-research-code#readme) |
 
-- **Quant research.** Preregistration, matched-null controls, placebo tests, walk-forward validation,
-  era splits, block bootstrap, sample gates, explicit PASS / WATCH / KILL decisions.
-- **Systematic trading development.** Python research-to-production stack — exchange APIs, order
-  lifecycle, partial fills, reconciliation against venue truth, deterministic replay, event stores,
-  monitoring.
-- **Portfolio and risk ownership.** Capital allocation, correlated exposure, regime dependence,
-  portfolio heat, leverage, drawdown control, capacity, strategy overlap.
-- **AI workflow engineering.** Model-assisted research with deterministic eligibility checks,
-  replaceable providers, offline evaluation and human decisions at research handoffs.
+## How I use AI agents
 
-Scope of the independent track: managed systematic trading capital across proprietary/owned capital and
-external/prop trading allocations, with peak capital under management up to $25M; 10+ live strategies
-at peak across BTC, ETH and liquid altcoin perpetuals; 50+ documented strategy lines researched,
-validated, deployed, parked or rejected.
+I use multi-agent workflows to separate research, implementation and independent review.
+I own the problem definition, evidence requirements and final decisions. Repository checks and
+review artifacts make agent output inspectable; a model saying "done" is not completion evidence.
 
----
+The public projects have distinct roles: Research Intelligence Platform supports external-agent
+handoffs and deterministic validation, while AIQE checks the integrity of engineering changes.
+They do not claim to ship a general autonomous multi-agent scheduler.
 
-### Public code
+## Research and engineering interests
 
-**[zaBor](https://github.com/zabor-crypto/zaBor)** — trading engineering toolkit.
-An emergency risk-control engine with account-level drawdown protection: PnL attribution decides
-*which side* caused a loss, positions are ranked and closed surgically, and a portfolio-level Regime
-Guard covers the slow bleed that no threshold on a 15-minute window ever catches. Fail-closed by
-design — 153 offline tests, no credentials needed to run any of it. Alongside it: a wallet-tagged
-Hyperliquid microstructure recorder that turns adverse selection from an assumption into a
-per-counterparty measurement, and a multi-venue funding-carry research stack.
+- Statistical validation, reproducible experiments and applied ML evaluation.
+- Market microstructure, execution timing, order lifecycle and reconciliation.
+- Portfolio construction, correlated exposure and risk controls.
+- Reliable research workflows, deterministic checks and reviewable AI-assisted development.
 
-**[Research Intelligence Platform](https://github.com/zabor-crypto/research-intelligence-platform)** —
-research-to-hypothesis pipeline.
-Turns papers, repositories and notes into ranked, backtest-ready strategy hypotheses. The eligibility
-rules are deterministic code kept *outside* the model prompt, so a rejection is reproducible and
-auditable whether or not an LLM is in the loop. 324 tests, fully offline, no API key required.
+Python · SQL · pandas / NumPy / SciPy · scikit-learn · pytest · asyncio · SQLite · Parquet / DuckDB
 
-Both install and run from a clean clone with no exchange account and no keys.
+## Public and private scope
 
----
-
-### Applied AI and technical coordination
-
-The Research Intelligence Platform also provides a concrete applied-AI engineering example:
-external material becomes structured hypotheses, model outputs pass through code-enforced rules,
-and an offline provider makes the workflow reproducible without a model API.
-
-This is the basis for my adjacent interest in applied AI engineering, research automation and
-hands-on technical coordination. The public code demonstrates implementation and evaluation;
-leadership scope is discussed through specific project examples.
-
----
-
-### Technical focus
-
-Python · pandas / NumPy / SciPy · pytest · asyncio · SQLite and event stores · Parquet / DuckDB ·
-exchange REST and WebSocket integrations · deterministic replay and backtest parity · Linux, systemd,
-multi-VPS operation
-
----
-
-### Public / private boundary
-
-The public repositories are the engineering and methodology layer, published deliberately. Live
-strategy logic and parameters, private research corpora, account data, positions and trading records
-are not published, and results that depend on private datasets are labelled as such rather than
-presented as reproducible.
-
-Where a figure here comes from a reconstruction or a shadow test rather than realised live trading,
-it says so.
-
----
+Public repositories contain selected engineering and methodology examples. Current strategy logic,
+private research corpora, calibrated selection/allocation policies, live configuration and account
+records remain private. Academic, research, shadow and realised-live results are labelled separately.
+A passing software check establishes only what that check actually tested.
 
 [LinkedIn](https://www.linkedin.com/in/boris-zabavnikov)
