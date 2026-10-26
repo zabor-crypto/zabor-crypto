@@ -3,7 +3,13 @@
 **Quantitative research and engineering · Applied ML · Execution and portfolio risk**
 
 I build Python systems that carry research from a falsifiable hypothesis through validation,
-execution modelling and portfolio decisions. My digital-asset market experience dates to 2013.
+execution modelling and portfolio decisions.
+
+**ZBVN Ecosystem / Independent Systematic Trading & Quant Research, 2013–Present.**
+My work spans research, production engineering and portfolio/risk ownership.
+Managed systematic trading capital across proprietary/owned capital and external/prop trading
+allocations, with peak capital under management up to $25M.
+Ran 10+ live strategies at peak across BTC, ETH and liquid altcoin perpetuals.
 
 I am interested in three directions equally: **Quant / ML / AI Research**, **Execution Engineering**
 and **Systematic Portfolio Management**.
